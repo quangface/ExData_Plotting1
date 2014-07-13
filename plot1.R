@@ -9,7 +9,7 @@ hw2a <- hw1[(hw1$Date == "1/2/2007" | hw1$Date == "2/2/2007"), ]
 
 ## create the histogram 
 
-par(mfrow = c(1,1))
+par(mfrow = c(1,1), bg = "white")
 
 
 hist(hw2a$Global_active_power, col = "red", breaks = 12, 

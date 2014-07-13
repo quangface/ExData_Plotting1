@@ -8,7 +8,7 @@ hw1 <- read.table("household_power_consumption.txt", sep = ";",
 hw2a <- hw1[(hw1$Date == "1/2/2007" | hw1$Date == "2/2/2007"), ]
 
 ## reset the canvas
-par(mfrow = c(1,1))
+par(mfrow = c(1,1), bg = "white")
 
 ## create the time
 dateTime <- strptime( paste(hw2a$Date,hw2a$Time), format="%d/%m/%Y %H:%M:%S")
