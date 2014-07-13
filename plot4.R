@@ -1,5 +1,4 @@
 ## plot 4
-
 ## read in the data
 hw1 <- read.table("household_power_consumption.txt", sep = ";", 
                   header = TRUE, stringsAsFactors = TRUE, 
@@ -8,8 +7,10 @@ hw1 <- read.table("household_power_consumption.txt", sep = ";",
 ## subset the data on the two specified days
 hw2a <- hw1[(hw1$Date == "1/2/2007" | hw1$Date == "2/2/2007"), ]
 
-## plot 4
+## set the layout
 par(mfrow = c(2,2), mar = c(5,4,2,1))
+
+## create the 4 plots
 with(hw2b, plot(dateTime, Global_active_power, type="l", 
                 ylab = "Global Active Power", xlab = ""))
 with(hw2b, plot(dateTime, Voltage, type="l", 
